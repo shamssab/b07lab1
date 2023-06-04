@@ -11,25 +11,25 @@ public class Polynomial {
 
     public Polynomial add(Polynomial poly) {
         int maxDegree = Math.max(this.coefficients.length, poly.coefficients.length);
-        double[] result = new double[maxDegree];
+        double[] total = new double[maxDegree];
 
         for (int i = 0; i < this.coefficients.length; i++) {
-            result[i] += this.coefficients[i];
+            total[i] += this.coefficients[i];
         }
 
         for (int i = 0; i < poly.coefficients.length; i++) {
-            result[i] += poly.coefficients[i];
+            total[i] += poly.coefficients[i];
         }
 
-        return new Polynomial(result);
+        return new Polynomial(total);
     }
 
     public double evaluate(double x) {
-        double result = 0;
+        double total = 0;
         for (int i = 0; i < this.coefficients.length; i++) {
-            result += this.coefficients[i] * Math.pow(x, i);
+            total += this.coefficients[i] * Math.pow(x, i);
         }
-        return result;
+        return total;
     }
 
     public boolean hasRoot(double x) {
