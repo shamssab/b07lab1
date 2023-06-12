@@ -34,7 +34,7 @@ public class Polynomial {
         }
         
         int counter = 0;
-        for(int i = 0; i<sum; i++){
+        for(int i = 0; i < sum; i++){
             if(totalCo[i]!= 0){
                 counter++;   
             }
@@ -43,11 +43,11 @@ public class Polynomial {
         double[] lastCo = new double[counter];
         int[] lastEx = new int[counter];
         int index = 0;
-        for(int i = 0; i<sum; i++){
+        for(int i = 0; i < sum; i++){
             if(totalCo[i] != 0){
                    lastCo[index] = totalCo[i];
                     lastEx[index] = totalEx[i];
-                    index++
+                    index++;
             }
         }
 
