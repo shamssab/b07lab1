@@ -34,7 +34,7 @@ public class Polynomial {
         }
         
         int counter = 0;
-        for(int i = 0; i < sum; i++){
+        for(int i = 0; i < size; i++){
             if(totalCo[i]!= 0){
                 counter++;   
             }
@@ -43,7 +43,7 @@ public class Polynomial {
         double[] lastCo = new double[counter];
         int[] lastEx = new int[counter];
         int index = 0;
-        for(int i = 0; i < sum; i++){
+        for(int i = 0; i < size; i++){
             if(totalCo[i] != 0){
                    lastCo[index] = totalCo[i];
                     lastEx[index] = totalEx[i];
@@ -67,7 +67,7 @@ public class Polynomial {
     }
     
     //new method
-    public Polynomial multiple(Polynomial poly){
+    public Polynomial multiply(Polynomial poly){
         int multSize = this.coefficients.length + poly.coefficients.length;
         double[] multiplyCo = new double[multSize];
         int[] multiplyEx = new int[multSize];
