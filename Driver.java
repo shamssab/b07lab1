@@ -6,12 +6,12 @@ public class Driver {
         Polynomial p = new Polynomial();
         System.out.println(p.evaluate(3));
 
-        double[] c1 = {6, 0, 0, 5};
+        double[] c1 = {6, 4, 5};
         int[] e1 = {0, 1, 3};
         Polynomial p1 = new Polynomial(c1, e1);
 
-        double[] c2 = {0, -2, 0, 0, -9};
-        int[] e2 = {0, 1, 3, 4};
+        double[] c2 = {-8, -2, 4};
+        int[] e2 = {0, 1, 2};
         Polynomial p2 = new Polynomial(c2, e2);
 
         Polynomial s = p1.add(p2);
