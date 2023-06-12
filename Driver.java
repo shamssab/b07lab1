@@ -6,21 +6,21 @@ public class Driver {
         Polynomial p = new Polynomial();
         System.out.println(p.evaluate(3));
 
-        double[] c1 = {6, 4, 5};
-        int[] e1 = {0, 1, 3};
+        double[] c1 = {6, 4, 2};
+        int[] e1 = {0, 1, 2};
         Polynomial p1 = new Polynomial(c1, e1);
 
-        double[] c2 = {-8, -2, 4};
+        double[] c2 = {6, 4, 2};
         int[] e2 = {0, 1, 2};
         Polynomial p2 = new Polynomial(c2, e2);
 
         Polynomial s = p1.add(p2);
-        System.out.println("s(0.1) = " + s.evaluate(0.1));
+        System.out.println("s(2) = " + s.evaluate(2));
 
         if (s.hasRoot(1))
-            System.out.println("1 is a root of s");
+            System.out.println("1 is a root of s\n");
         else
-            System.out.println("1 is not a root of s");
+            System.out.println("1 is not a root of s\n");
 
         Polynomial product = p1.multiply(p2);
         System.out.println("Product: " + product.evaluate(2));
