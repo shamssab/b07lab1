@@ -154,7 +154,7 @@ public class Polynomial {
             }
         }
 
-        writer.println(polynomialString);
+        writer.println(polynomialString.toString());
         writer.close();
     }
 }
